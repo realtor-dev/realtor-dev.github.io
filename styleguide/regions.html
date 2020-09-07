@@ -113,6 +113,18 @@
               
               
               
+              <li><a href="#sale-blocks">Sale blocks</a></li>
+              
+              
+              
+              <li><a href="#sale-blocks--small">Small sale blocks</a></li>
+              
+              
+              
+              <li><a href="#sale-tiles">Sale tiles</a></li>
+              
+              
+              
               <li><a href="#service-icons">Service icons</a></li>
               
               
@@ -1313,6 +1325,337 @@ lessons learned to our workflow.<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--bold c-eggshell h4"</span><span class="nt">&gt;</span>Your space here!<span class="nt">&lt;/h3&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--rental__hover tile__hover bg-orange"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"link--cta link--cta--inverse"</span><span class="nt">&gt;</span>Learn more<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="sale-blocks" class="styleguide">Sale blocks</h1>
+<p class="styleguide">The following example outputs 3 sale blocks with a CTA link.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="region--sale-blocks region">
+  <h2 class="heading--underline--orange region--sale-blocks__title">Sales</h2>
+  <div class="region--sale-blocks__sales">
+    <div class="sale-block">
+<!--      <a class="sale-block__link" href="/listings/sales/tokyo-treasures/"> -->
+      <a class="sale-block__link" href="https://www.airbnb.com/rooms/11742309" target="_blank">
+        <div class="sale-block__image" style="background-image: url(/assets/img/work/logos/airbnb-logo-eggshell.png);">
+          <img src="/assets/img/work/tokyo-treasures/airbnb-block.jpg" alt="Tokyo Treasures">
+        </div>
+        <h3 class="heading--underline--orange">Tokyo Treasures</h3>
+        <div class="sale-block__tags">
+          <p>Hachikō Statue</p><p>• </p>
+          <p>Scramble Crossing </p><p>• </p>
+          <p>Shibuya Station </p><p>• </p>
+          <p>Youth Capital of Tokyo </p>
+        </div>
+      </a>
+    </div>
+    <div class="sale-block">
+<!--      <a class="sale-block__link" href="/listings/sales/tokyo-listing1/"> -->
+      <a class="sale-block__link" href="">
+        <div class="sale-block__image" style="background-image: url(/assets/img/work/logos/airbnb-logo-eggshell.png);">
+          <img src="/assets/img/work/tokyo-listing1/tokyo-listing1-block.jpg" alt="">
+        </div>
+        <h3 class="heading--underline--orange">Your property here!</h3>
+        <div class="sale-block__tags">
+          <p>Drupal 8 </p><p>• </p>
+          <p>Responsive Design </p><p>• </p>
+          <p>UX </p><p>• </p>
+          <p>Client Server Integration </p>
+        </div>
+      </a>
+    </div>
+    <div class="sale-block">
+      <a class="sale-block__link" href="/listings/sales/tokyo-listing2/">
+        <div class="sale-block__image" style="background-image: url(/assets/img/work/logos/homeaway-logo-eggshell.png);">
+          <img src="/assets/img/work/tokyo-listing2/tokyo-listing2-block.jpg" alt="Your space here!">
+        </div>
+        <h3 class="heading--underline--orange">Your space here!</h3>
+        <div class="sale-block__tags">
+          <p>Drupal 8 </p><p>• </p>
+          <p>Responsive Design </p><p>• </p>
+          <p>UX </p><p>• </p>
+          <p>Web Mapping </p>
+        </div>
+      </a>
+    </div>
+    <div class="region--sale-blocks__cta flex-center">
+      <a href="/listings/sales" class="button--arrow--orange">View all sales</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"region--sale-blocks region"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"heading--underline--orange region--sale-blocks__title"</span><span class="nt">&gt;</span>Sales<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"region--sale-blocks__sales"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!--      &lt;a class="sale-block__link" href="/listings/sales/tokyo-treasures/"&gt; --&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sale-block__link"</span> <span class="na">href=</span><span class="s">"https://www.airbnb.com/rooms/11742309"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__image"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/logos/airbnb-logo-eggshell.png);"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/work/tokyo-treasures/airbnb-block.jpg"</span> <span class="na">alt=</span><span class="s">"Tokyo Treasures"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--underline--orange"</span><span class="nt">&gt;</span>Tokyo Treasures<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__tags"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Hachikō Statue<span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Scramble Crossing <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Shibuya Station <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Youth Capital of Tokyo <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!--      &lt;a class="sale-block__link" href="/listings/sales/tokyo-listing1/"&gt; --&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sale-block__link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__image"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/logos/airbnb-logo-eggshell.png);"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/work/tokyo-listing1/tokyo-listing1-block.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--underline--orange"</span><span class="nt">&gt;</span>Your property here!<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__tags"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Drupal 8 <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Responsive Design <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>UX <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Client Server Integration <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sale-block__link"</span> <span class="na">href=</span><span class="s">"/listings/sales/tokyo-listing2/"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__image"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/logos/homeaway-logo-eggshell.png);"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/work/tokyo-listing2/tokyo-listing2-block.jpg"</span> <span class="na">alt=</span><span class="s">"Your space here!"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--underline--orange"</span><span class="nt">&gt;</span>Your space here!<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__tags"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Drupal 8 <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Responsive Design <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>UX <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Web Mapping <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"region--sale-blocks__cta flex-center"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/listings/sales"</span> <span class="na">class=</span><span class="s">"button--arrow--orange"</span><span class="nt">&gt;</span>View all sales<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="sale-blocks--small" class="styleguide">Small sale blocks</h1>
+<p class="styleguide">For smaller sale blocks.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="region--sale-blocks region--sale-blocks--small region">
+  <div class="region--sale-blocks__sales">
+    <div class="sale-block">
+      <a class="sale-block__link" href="/listings/sales/mitpress-allbooks/">
+        <div class="sale-block__image" style="background-image: url(/assets/img/work/logos/mitpress-logo-eggshell.png);">
+          <img src="/assets/img/work/mitpress-allbooks/mitpress-allbooks-block.jpg" alt="MIT Press AllBooks Importer">
+        </div>
+        <h3 class="heading--underline--orange">MIT Press AllBooks Importer</h3>
+        <div class="sale-block__tags">
+          <p>Drupal </p><p>• </p>
+          <p>Module Development </p><p>• </p>
+          <p>PHP </p><p>• </p>
+          <p>Testing </p>
+        </div>
+      </a>
+    </div>
+    <div class="sale-block">
+      <a class="sale-block__link" href="/listings/sales/transaction-advisors/">
+        <div class="sale-block__image" style="background-image: url(/assets/img/work/logos/transaction-advisors-logo-eggshell.png);">
+          <img src="/assets/img/work/transaction-advisors/transaction-advisors-block.jpg" alt="Transaction Advisors Multisite Development">
+        </div>
+        <h3 class="heading--underline--orange">Transaction Advisors Multisite Development</h3>
+        <div class="sale-block__tags">
+          <p>Drupal </p> <p>• </p>
+          <p>Multisite </p><p>• </p>
+          <p>Payment Processing </p><p>• </p>
+          <p>Responsive Design </p>
+        </div>
+      </a>
+    </div>
+    <div class="sale-block">
+      <a class="sale-block__link" href="/listings/sales/mitpress-cognet/">
+        <div class="sale-block__image" style="background-image: url(/assets/img/work/logos/cognet-logo-eggshell.png);">
+          <img src="/assets/img/work/mitpress-cognet/mitpress-cognet-block.jpg" alt="MIT Press CogNet Responsive Redesign">
+        </div>
+        <h3 class="heading--underline--orange">MIT Press CogNet Responsive Redesign</h3>
+        <div class="sale-block__tags">
+          <p>Drupal </p><p>• </p>
+          <p>Responsive Design </p><p>• </p>
+          <p>UX </p><p>• </p>
+          <p>Javascript </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"region--sale-blocks region--sale-blocks--small region"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"region--sale-blocks__sales"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sale-block__link"</span> <span class="na">href=</span><span class="s">"/listings/sales/mitpress-allbooks/"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__image"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/logos/mitpress-logo-eggshell.png);"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/work/mitpress-allbooks/mitpress-allbooks-block.jpg"</span> <span class="na">alt=</span><span class="s">"MIT Press AllBooks Importer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--underline--orange"</span><span class="nt">&gt;</span>MIT Press AllBooks Importer<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__tags"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Drupal <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Module Development <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>PHP <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Testing <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sale-block__link"</span> <span class="na">href=</span><span class="s">"/listings/sales/transaction-advisors/"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__image"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/logos/transaction-advisors-logo-eggshell.png);"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/work/transaction-advisors/transaction-advisors-block.jpg"</span> <span class="na">alt=</span><span class="s">"Transaction Advisors Multisite Development"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--underline--orange"</span><span class="nt">&gt;</span>Transaction Advisors Multisite Development<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__tags"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Drupal <span class="nt">&lt;/p&gt;</span> <span class="nt">&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Multisite <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Payment Processing <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Responsive Design <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sale-block__link"</span> <span class="na">href=</span><span class="s">"/listings/sales/mitpress-cognet/"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__image"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/logos/cognet-logo-eggshell.png);"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/work/mitpress-cognet/mitpress-cognet-block.jpg"</span> <span class="na">alt=</span><span class="s">"MIT Press CogNet Responsive Redesign"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--underline--orange"</span><span class="nt">&gt;</span>MIT Press CogNet Responsive Redesign<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sale-block__tags"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Drupal <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Responsive Design <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>UX <span class="nt">&lt;/p&gt;&lt;p&gt;</span>• <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Javascript <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="sale-tiles" class="styleguide">Sale tiles</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="region--sale-tiles region--full-width">
+  <div class="region--sale-tiles__wrapper region--full-width__wrapper">
+    <div class="tile--title--sale bg-magenta">
+      <div class="tile--title--sale__text">
+        <h2 class="c-eggshell h1">Listings</h2>
+        <p class="c-eggshell">
+          Japan's capital city serves as a luminary for thoughtful design, high-energy nightlife, natural beauty, and big business savvy.
+        </p>
+      </div>
+      <div class="tile--title--sale__link">
+        <a href="/work" class="button--arrow--white-magenta">View all work</a>
+      </div>
+    </div>
+    <div class="region--sale-tiles__tiles">
+      <div class="tile--sale tile">
+        <a href="https://www.airbnb.com/rooms/11742309" class="tile--sale__link" target="_blank">
+          <div class="tile--sale__content tile__content bg-dark-teal" style="background-image: url(/assets/img/work/tokyo-treasures/tokyo-treasures-tile.jpg);">
+            <h3 class="heading--bold c-eggshell h4">Tokyo Treasures</h3>
+          </div>
+          <div class="tile--sale__hover tile__hover bg-orange">
+            <p>This newly renovated condo has a modern feel, while paying homage to its Japanese roots.  Shibuya is renowned for its youth fashion culture and nightlife, but also plays host to cozy Japanese gastropubs (izakayas), the largest pedestrian crosswalk in the world, historical shrines, and Tokyo's lively Yoyogi Park.</p>
+            <p class="link--cta link--cta--inverse">Learn more</p>
+          </div>
+        </a>
+      </div>
+      <div class="tile--sale tile">
+<!--        <a href="/listings/sales/tokyo-listing1/" class="tile--sale__link"> -->
+    <a href="/services/" class="tile--sale__link">
+          <div class="tile--sale__content tile__content bg-dark-teal" style="background-image: url(/assets/img/work/tokyo-listing1/tokyo-listing1-tile.jpg);">
+            <h3 class="heading--bold c-eggshell h4">Your property here!</h3>
+          </div>
+          <div class="tile--sale__hover tile__hover bg-orange">
+            <p>List your property here, and earn more from your space!</p>
+            <p class="link--cta link--cta--inverse">Learn more</p>
+          </div>
+        </a>
+      </div>
+      <div class="tile--sale tile">
+        <a href="/services/" class="tile--sale__link">
+          <div class="tile--sale__content tile__content bg-dark-teal" style="background-image: url(/assets/img/work/tokyo-listing2/tokyo-listing2-tile.jpg);">
+            <h3 class="heading--bold c-eggshell h4">Your space here!</h3>
+          </div>
+          <div class="tile--sale__hover tile__hover bg-orange">
+            <p></p>
+            <p class="link--cta link--cta--inverse">Learn more</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"region--sale-tiles region--full-width"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"region--sale-tiles__wrapper region--full-width__wrapper"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--title--sale bg-magenta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--title--sale__text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"c-eggshell h1"</span><span class="nt">&gt;</span>Listings<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-eggshell"</span><span class="nt">&gt;</span>
+          Japan's capital city serves as a luminary for thoughtful design, high-energy nightlife, natural beauty, and big business savvy.
+        <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--title--sale__link"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/work"</span> <span class="na">class=</span><span class="s">"button--arrow--white-magenta"</span><span class="nt">&gt;</span>View all work<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"region--sale-tiles__tiles"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale tile"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.airbnb.com/rooms/11742309"</span> <span class="na">class=</span><span class="s">"tile--sale__link"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale__content tile__content bg-dark-teal"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/tokyo-treasures/tokyo-treasures-tile.jpg);"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--bold c-eggshell h4"</span><span class="nt">&gt;</span>Tokyo Treasures<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale__hover tile__hover bg-orange"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>This newly renovated condo has a modern feel, while paying homage to its Japanese roots.  Shibuya is renowned for its youth fashion culture and nightlife, but also plays host to cozy Japanese gastropubs (izakayas), the largest pedestrian crosswalk in the world, historical shrines, and Tokyo's lively Yoyogi Park.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"link--cta link--cta--inverse"</span><span class="nt">&gt;</span>Learn more<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale tile"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!--        &lt;a href="/listings/sales/tokyo-listing1/" class="tile--sale__link"&gt; --&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/services/"</span> <span class="na">class=</span><span class="s">"tile--sale__link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale__content tile__content bg-dark-teal"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/tokyo-listing1/tokyo-listing1-tile.jpg);"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--bold c-eggshell h4"</span><span class="nt">&gt;</span>Your property here!<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale__hover tile__hover bg-orange"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>List your property here, and earn more from your space!<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"link--cta link--cta--inverse"</span><span class="nt">&gt;</span>Learn more<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale tile"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/services/"</span> <span class="na">class=</span><span class="s">"tile--sale__link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale__content tile__content bg-dark-teal"</span> <span class="na">style=</span><span class="s">"background-image: url(/assets/img/work/tokyo-listing2/tokyo-listing2-tile.jpg);"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"heading--bold c-eggshell h4"</span><span class="nt">&gt;</span>Your space here!<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile--sale__hover tile__hover bg-orange"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"link--cta link--cta--inverse"</span><span class="nt">&gt;</span>Learn more<span class="nt">&lt;/p&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
