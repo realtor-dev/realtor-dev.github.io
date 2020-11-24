@@ -150,7 +150,13 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 
     <div class="page-content">
-      <div class="region--hero region--hero--half-height region--hero--half-width region--hero--listings region--full-width">
+      <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+
+<div class="region--hero region--hero--half-height region--hero--half-width region--hero--listings region--full-width">
   <div class="region--hero__wrapper region--full-width__wrapper">
     <div class="region--hero__text">
       <h1 class=" heading--bold heading--underline--orange">Las Vegas Listings</h1>
@@ -160,8 +166,8 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     <div class="region--hero__image"></div>
   </div>
 </div>
-<div style="max-height:1200px;overflow:hidden;">
-    <iframe src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=2395985" width="100%" height="1200px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<div style="max-height:1200px;overflow:auto;">
+    <iframe src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=2395985" width="100%" height="1200px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" onload="resizeIframe(this)"></iframe>
 </div>
 
 
